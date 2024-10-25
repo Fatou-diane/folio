@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <!-- Bootstrap CSS -->
+     
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        /* Styles pour la navbar */
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3a4e92; /* Couleur de fond de la navbar */
+    z-index: 1000; /* S'assurer que la navbar est toujours au-dessus */
+    padding: 5px ;
+}
+.container-fluid{
+    background-color: #3a4e92;
+}
+
+        .navbar-brand img {
+            width: 40px; /* Taille du logo */
+            border-radius: 50%;
+        }
+
+        .navbar-nav {
+            margin-left: auto; /* Aligner les liens à droite */
+            background-color: #3a4e92;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fcfdff !important; /* Couleur du texte en blanc */
+            margin-right: 30px; /* Augmente l'espacement entre les liens */
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: #1CAAE2 !important; /* Couleur au survol */
+        }
+
+        /* Pour gérer le style du menu burger sur mobile */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                text-align: center; /* Centrer les éléments du menu sur mobile */
+                margin-top: 10px; /* Ajoute de l'espace entre le logo et le menu */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+     <section class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img src="Group 1.png" alt="Logo"></a>
+        <!-- Bouton menu burger pour mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens du menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#accueil">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#propos">À PROPOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#exprience">EXPÉRIENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mes-competences">COMPÉTENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+     </section>
+    <section id="accueil">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Bonjour</h1>
+                <h2>Je suis Fatou Diane</h2>
+                <h3>Référente Digitale</h3>
+                <div class="bordered-box">
+                    <p><a href="FAOU DIANE.png" class="btn btn-primary">Voir mon CV</a></p>
+                </div>
+                
+                <!-- Section des réseaux sociaux -->
+                <div class="social-icons mt-5 text-center"> <!-- Laissez la classe mt-3 pour contrôler l'espacement -->
+                    <p>Mes réseaux sociaux </p>
+                    
+                    <a href="#" target="_blank"><img src="logo-facebook-blanc.webp" alt="Facebook" style="width: 30px;"></a>
+                    <a href="#" target="_blank"><img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn" style="width: 30px;"></a>
+                    <a href="#" target="_blank"><img src="twitter_logo_circle_icon_134015.webp" alt="Twitter" style="width: 30px;"></a>
+                    <a href="#" target="_blank"><img src="instagram.jpg" alt="Twitter" style="width: 30px;"></a>
+
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <img src="0G6A9952-removebg-preview.png" alt="Photo de Fatou Diane" class="profile-photo" style="width: 200px;">
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Section À propos de moi -->
+  <section id="propos">
+<section class="about-section">
+    <h2 class="about-title">À propos de moi</h2>
+
+    <!-- Conteneur pour le texte et l'image -->
+    <div class="about-container">
+        <!-- Image à gauche -->
+        <img src="FD-removebg-preview.png" alt="Photo de Fatou Diane" class="about-img">
+
+        <!-- Texte centré -->
+        <div class="about-text">
+            <p>je suis fatou diane une Référente Digitale passionnée, je me spécialise dans l'optimisation de la présence en ligne des entreprises, avec une attention particulière portée à l'expérience utilisateur et à la visibilité digitale. Grâce à mon expertise en SEO, marketing digital, et design UI, j'aide les marques à se démarquer et à atteindre leurs objectifs. Motivée par l'innovation et la collaboration, je suis toujours à la recherche de nouveaux défis pour maximiser l'impact des stratégies numériques."</p>
+        </div>
+    </div>
+</section>
+</section>
+<style>
+    /* Titre encadré centré */
+    .about-title {
+       text-align: center;
+        border: 2px solid #007bff; /* Bordure bleue */
+        padding: 10px 20px;
+        display: inline-block;
+        color: #007bff; /* Couleur du texte bleue */
+        margin-bottom: 20px;
+        border-radius: 10px; /* Coins arrondis */
+       
+    }
+
+    /* Conteneur de la section avec fond bleu */
+    .about-container {
+        background-color: #007bff; /* Fond bleu */
+       text-decoration-color: white;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        flex-wrap: wrap; /* Permet de gérer la disposition sur mobile */
+    }
+
+    /* Image à gauche */
+    .about-img {
+        width: 200px; /* Taille de l'image */
+        border-radius: 10px;
+        margin-left: 20px; /* Espace entre l'image et le texte */
+    }
+
+    /* Texte centré */
+    .about-text {
+        flex: 30;
+        text-align: left; /* Texte centré */
+        color: white;
+        color: rgb(255, 255, 255);
+    }
+    .about-text P{
+        color: white;
+    }
+
+    /* Responsivité */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column; /* Empile l'image et le texte sur mobile */
+            text-align: center; /* Centre tout le contenu */
+            color: white;
+        }
+
+        .about-img {
+            margin-bottom: 20px; /* Ajoute un espace sous l'image sur mobile */
+            margin-right: 10; /* Supprime l'espace latéral */
+            color: white;
+        }
+    }
+</style>
+
+<!-- JavaScript pour ajuster l'image et le texte en fonction de la taille de l'écran -->
+<script>
+    window.addEventListener('resize', function() {
+        var aboutContainer = document.querySelector('.about-container');
+        var aboutImg = document.querySelector('.about-img');
+
+        if (window.innerWidth <= 768) {
+            // Si l'écran est petit (mobile), ajuster l'image et le texte
+            aboutImg.style.marginRight = "0"; 
+            aboutContainer.style.flexDirection = "column";
+            aboutContainer.style.textAlign = "center";
+        } else {
+            // Rétablir le style pour les grands écrans
+            aboutImg.style.marginRight = "20px";
+            aboutContainer.style.flexDirection = "row";
+            aboutContainer.style.textAlign = "left";
+        }
+    });
+</script>
+<!-- Section Expérience -->
+ <section id="exprience">
+<section class="experience-section">
+    <h2 class="experience-title">Expérience</h2>
+
+    <div class="experience-container">
+        <div class="experience-item">
+            <h3 class="experience-item-title">Marketing Digital</h3>
+            <p class="experience-item-description">J'ai contribué à la création et à la mise en œuvre de stratégies digitales, notamment en gestion des réseaux sociaux et en SEO, ce qui a amélioré la visibilité et l'engagement des utilisateurs.</p>
+        </div>
+        
+        <div class="experience-item">
+            <h3 class="experience-item-title">Design</h3>
+            <p class="experience-item-description">En concevant des interfaces utilisateur (UI) intuitives, j'ai veillé à offrir une expérience fluide. Mon approche comprenait la création de maquettes et des tests pour garantir l’adéquation aux besoins des utilisateurs.</p>
+        </div>
+        
+        <div class="experience-item">
+            <h3 class="experience-item-title">Gestion de Projet</h3>
+            <p class="experience-item-description">En équipe, j'ai participé à la planification et à l'exécution de projets en utilisant des méthodologies agiles, ce qui a permis d'assurer une collaboration efficace et de respecter les délais..</p>
+        </div>
+    </div>
+</section>
+</section>
+
+<style>/* Titre de la section */
+    .experience-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Conteneur de l'expérience */
+    .experience-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Permet d'adapter les éléments sur mobile */
+    }
+    
+    /* Éléments de l'expérience */
+    .experience-item {
+        border: 2px solid black; /* Bordure noire */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 20px;
+        margin: 10px;
+        width: 250px; /* Largeur fixe pour chaque élément */
+        background-color: white; /* Fond blanc */
+    }
+    
+    /* Titre de chaque item d'expérience */
+    .experience-item-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    /* Description de chaque item d'expérience */
+    .experience-item-description {
+        text-align: center;
+    }
+    
+    /* Responsivité */
+    @media (max-width: 768px) {
+        .experience-container {
+            flex-direction: column; /* Empile les éléments sur mobile */
+            align-items: center; /* Centre les éléments */
+        }
+    }
+    </style>
+<!-- Section Projets -->
+<section class="projects-section">
+    <h2 class="projects-title">Mes Projets</h2>
+
+    <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 1</h3>
+                    <img src="saponeo.jpg" class="d-block w-100" alt="Projet 1">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 2</h3>
+                    <img src="luxe.png" class="d-block w-100" alt="Projet 2">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 3</h3>
+                    <img src="FD CLAIRKPlan de travail 5.png" class="d-block w-100" alt="Projet 3">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 4</h3>
+                    <img src="p2ref dig.jpg" class="d-block w-100" alt="Projet 4">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 5</h3>
+                    <img src="1-LOGO OFFICIEL .2fd - Copie.png" class="d-block w-100" alt="Projet 5">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="project-item">
+                    <h3 class="project-title">Projet 6</h3>
+                    <img src="gestu.png" class="d-block w-100" alt="Projet 6">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contrôles -->
+        <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+</section>
+<style>/* Titre de la section */
+    .projects-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Élément de projet */
+    .project-item {
+        text-align: center;
+        border: 2px solid black; /* Bordure noire */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 10px;
+        background-color: white; /* Fond blanc */
+    }
+    
+    /* Titre du projet */
+    .project-title {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    /* Images du carrousel */
+    .carousel-item img {
+        max-height: 500px; /* Ajuste la hauteur des images si nécessaire */
+        object-fit: cover; /* Pour que l'image remplisse bien son conteneur */
+    }
+    </style>
+<section id="mes-outils-favoris" class="container my-5">
+    <h2 class="text-center">Je vous présente mes outils favoris</h2>
+    <p class="text-center">Voici une sélection de mes outils préférés que j'utilise dans mon travail quotidien.</p>
+
+    <div id="carouselOutils" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Outil 1 -->
+            <div class="carousel-item active">
+                <img src="images (1).png" class="d-block w-100" alt="Outil 1">
+            </div>
+            <!-- Outil 2 -->
+            <div class="carousel-item">
+                <img src="images (2).png" class="d-block w-100" alt="Outil 2">
+            </div>
+            <!-- Outil 3 -->
+            <div class="carousel-item">
+                <img src="images.png" class="d-block w-100" alt="Outil 3">
+            </div>
+            <!-- Outil 4 -->
+            <div class="carousel-item">
+                <img src="trelo.png" class="d-block w-100" alt="Outil 4">
+            </div>
+            <!-- Outil 5 -->
+            <div class="carousel-item">
+                <img src="wordpress.png" class="d-block w-100" alt="Outil 5">
+            </div>
+            <!-- Outil 6 -->
+            <div class="carousel-item">
+                <img src="canva.jpeg" class="d-block w-100" alt="Outil 6">
+            </div>
+            <!-- Outil 7 -->
+            <div class="carousel-item">
+                <img src="photo.png" class="d-block w-100" alt="Outil 7">
+            </div>
+            <!-- Outil 8 -->
+            <div class="carousel-item">
+                <img src="AI.jpeg" class="d-block w-100" alt="Outil 8">
+            </div>
+            <!-- Outil 9 -->
+            <div class="carousel-item">
+                <img src="figmz.png" class="d-block w-100" alt="Outil 9">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselOutils" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselOutils" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+</section>
+
+<style>
+    /* Styles pour la section Outils Favoris */
+    #mes-outils-favoris {
+        background-color: #f8f9fa; /* Couleur de fond douce */
+        padding: 20px;
+        border-radius: 10px; /* Arrondi des coins */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    }
+
+    h2 {
+        color: #3a4e92; /* Couleur du titre */
+        margin-bottom: 10px; /* Espace en dessous du titre */
+    }
+
+    p {
+        color: #555; /* Couleur du texte */
+        margin-bottom: 30px; /* Espace en dessous du texte */
+    }
+
+    .carousel-item img {
+        height: 300px; /* Hauteur fixe pour les images */
+        object-fit: contain; /* Assure que les images s'ajustent bien */
+    }
+</style>
+
+<section id="mes-competences" class="container my-5">
+    <h2 class="text-center">Mes Compétences</h2>
+    <div class="competence-container border p-4">
+        <!-- Design Graphique -->
+        <div class="mb-3">
+            <label for="designGraphique">Design Graphique</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #3a4e92;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+        <!-- Community Manager -->
+        <div class="mb-3">
+            <label for="communityManager">Community Manager</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #3a4e92;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+        </div>
+        <!-- Design UI/UX -->
+        <div class="mb-3">
+            <label for="designUIUX">Design UI/UX</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #3a4e92;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+        <!-- Gestion de Projet -->
+        <div class="mb-3">
+            <label for="gestionProjet">Gestion de Projet</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #3a4e92;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+        </div>
+        <!-- WordPress -->
+        <div class="mb-3">
+            <label for="wordpress">WordPress</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #3a4e92;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <!-- Marketing Digital -->
+        <div class="mb-3">
+            <label for="marketingDigital">Marketing Digital</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #3a4e92;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Styles pour la section Compétences */
+    #mes-competences {
+        background-color: #f8f9fa; /* Couleur de fond douce */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .competence-container {
+        border: 2px solid black; /* Bordure noire */
+        border-radius: 40px;
+    }
+
+    h2 {
+        color: #3a4e92; /* Couleur du titre */
+    }
+
+    label {
+        font-weight: bold; /* Texte gras pour les labels */
+        color: #000; /* Couleur des titres des compétences */
+    }
+
+    .progress {
+        height: 20px;
+        background-color: #000; /* Fond noir pour la barre de progression */
+    }
+
+    .progress-bar {
+        font-weight: bold;
+        line-height: 25px; /* Centrage vertical du texte */
+    }
+</style>
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-5">Contact</h2>
+
+    <!-- Informations de contact alignées sur une même ligne -->
+    <div class="row text-center mb-5">
+        <!-- Adresse -->
+        <div class="col-md-3">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>Adresse</p>
+            <p>Rufisque</p>
+        </div>
+        <!-- Numéro de contact -->
+        <div class="col-md-3">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>Contact</p>
+            <p>+221 77 362 05 81</p>
+        </div>
+        <!-- Adresse mail -->
+        <div class="col-md-3">
+            <i class="fas fa-envelope fa-2x"></i>
+            <p>Email</p>
+            <p>fatoudiane@gmail.com</p>
+        </div>
+        <!-- Réseaux sociaux -->
+        <div class="col-md-3">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <p>Réseaux Sociaux</p>
+            <p>Fatou Diane</p>
+        </div>
+    </div>
+
+    <!-- Photo et formulaire côte à côte -->
+    <div class="row">
+        <!-- Rectangle dégradé avec photo à gauche -->
+        <div class="col-md-6">
+            <div class="rectangle-degrade text-center">
+                <img src="0G6A9952-removebg-preview.png" alt="Fatou Diane" class="photo" />
+            </div>
+        </div>
+
+        <!-- Formulaire de contact à droite -->
+        <div class="col-md-6">
+            <div class="contact-form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    #contact {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .info-contact i {
+        color: #3a4e92; /* Couleur des icônes */
+    }
+
+    .info-contact p {
+        font-size: 16px;
+        color: #000;
+        margin: 0;
+    }
+
+    .contact-form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .rectangle-degrade {
+        background: linear-gradient(to right, #86b9f0, #f8f9fa); /* Dégradé bleu clair vers blanc */
+        padding: 1px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+    }
+
+    .photo {
+        width: 350px;
+        height: 350px;
+        border-radius: 0%;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group textarea {
+        border: 1px solid #3a4e92; /* Bordure bleue */
+    }
+
+    .btn-primary {
+        background-color: #3a4e92;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+        .rectangle-degrade, .contact-form-container {
+            margin-bottom: 20px;
+        }
+        .photo {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Informations de contact en colonne sur petits écrans */
+        .row.text-center .col-md-3 {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="FD CLAIRKPlan de travail 3.png" alt="Logo">
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Lien utiles</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Formations</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Projets</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contacts">
+            <p><strong>Nos contacts</strong><br>
+               Adresse : RUFISQUE<br>
+               Mobile : +221 77 362 05 81<br>
+               Email : fatoudiane3210@gmail.com</p>
+        </div>
+
+        <div class="footer-newsletter">
+            <p><strong>Newsletter</strong><br>Souscrivez à notre newsletter en renseignant votre adresse mail.</p>
+            <input type="email" placeholder="entrez votre adresse mail">
+            <button>S'abonner</button>
+        </div>
+
+        <div class="footer-social">
+            <p>Suivez-moi<br>@Fatou diane</p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>          
+            <i class="bi bi-twitter"></i>   
+             </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright: © 2023 fatou diane | Tous droits réservés.</p>
+    </div>
+</footer>
+<style>
+.footer-social p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-social i {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.footer-social i:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #3a4e92; /* Couleur bleu de fond */
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contacts p, .footer-newsletter p {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-newsletter input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.footer-newsletter button {
+    margin-top: 10px;
+    padding:  5px;
+    background-color: white;
+    color: #3a4e92;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social p{
+    color: white;
+}
+
+.footer-social a {
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+
+}
+.footer-bottom P{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .footer-logo, .footer-links, .footer-contacts, .footer-newsletter, .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-newsletter input {
+        width: 100%;
+    }
+
+    .footer-newsletter button {
+        width: 100%;
+    }
+}
+</style>
+
+    <!-- Bootstrap et JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
